@@ -10,16 +10,23 @@
         "projectUniqueName": "C:\\Projects\\ConsoleKGBibleProject\\ConsoleKGBlibliProjectApp\\ConsoleKGBlibliProjectApp.csproj",
         "projectName": "ConsoleKGBlibliProjectApp",
         "projectPath": "C:\\Projects\\ConsoleKGBibleProject\\ConsoleKGBlibliProjectApp\\ConsoleKGBlibliProjectApp.csproj",
-        "packagesPath": "C:\\Users\\DesktopGulle\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\KleberM2\\.nuget\\packages\\",
         "outputPath": "C:\\Projects\\ConsoleKGBibleProject\\ConsoleKGBlibliProjectApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DesktopGulle\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\KleberM2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -73,16 +80,23 @@
         "projectUniqueName": "C:\\Projects\\ConsoleKGBibleProject\\Repository.Json\\Repository.Json.csproj",
         "projectName": "Repository.Json",
         "projectPath": "C:\\Projects\\ConsoleKGBibleProject\\Repository.Json\\Repository.Json.csproj",
-        "packagesPath": "C:\\Users\\DesktopGulle\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\KleberM2\\.nuget\\packages\\",
         "outputPath": "C:\\Projects\\ConsoleKGBibleProject\\Repository.Json\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\DesktopGulle\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\KleberM2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -122,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

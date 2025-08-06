@@ -18,7 +18,8 @@ public static class MachineExplorer
         // var z = typeof(EndOfStreamException ).Assembly.FullName;  
         // string replaceProject = environment.Replace("/bin/Debug/net7.0", ""); /* TestProject */
         // string replaceProject = environment.Replace("/Api", "/Repository.Json");
-        string replaceProject = environment.Replace("/ConsoleKGBlibliProjectApp", "/Repository.Json");
+        string replaceProject = environment.Replace(@"ConsoleKGBlibliProjectApp\bin\Debug\net8.0", "Repository.Json");
+        // C:\Projects\ConsoleKGBibleProject\ConsoleKGBlibliProjectApp\bin\Debug\net8.0\PersonData.json
         //C:\\Projects\\ConsoleKGBibleProject\\ConsoleKGBlibliProjectApp\\bin\\Debug\\net8.0\\PersonData.json
 
         string fullPath = replaceProject + file;

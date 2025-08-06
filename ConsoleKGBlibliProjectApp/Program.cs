@@ -2,9 +2,10 @@
 using ConsoleKGBlibliProjectApp.Entities;
 using Repository.Json;
 
-Console.WriteLine("KGbibleprojetc");
+Console.WriteLine("KGBibleProject");
 
 Person person = new();
+City city = new();
 
 Console.WriteLine("Digite o nome do fiel:");
 person.Nome = Console.ReadLine();
@@ -15,8 +16,18 @@ person.Sexo = Console.ReadLine();
 
 
 
-Console.WriteLine("nome:" + person.Nome);
+// Console.WriteLine("nome:" + person.Nome);
 
 IGenericRepository _repository = new GenericRepository();
+// _repository.Create(city);
+// _repository.Create(person);
 
-_repository.Create(person);
+var cidade = _repository.GetById<City>(1);
+Console.WriteLine($"Exibindo o que veio do banco.");
+Console.WriteLine($"Nome: {cidade.Nome}");
+
+var pessoa = _repository.GetById<Person>(2);
+Console.WriteLine($"Exibindo o que veio do banco.");
+Console.WriteLine($"Nome: {pessoa.Nome}");
+Console.WriteLine($"Descrição: {pessoa.Descricao}");
+Console.WriteLine("Sexo:" + pessoa.Sexo);
