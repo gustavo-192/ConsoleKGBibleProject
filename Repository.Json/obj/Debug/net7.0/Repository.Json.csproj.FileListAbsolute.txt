@@ -1,0 +1,11 @@
+C:\Projects\KGBibleProject\Repository.Json\bin\Debug\net7.0\Repository.Json.deps.json
+C:\Projects\KGBibleProject\Repository.Json\bin\Debug\net7.0\Repository.Json.dll
+C:\Projects\KGBibleProject\Repository.Json\bin\Debug\net7.0\Repository.Json.pdb
+C:\Projects\KGBibleProject\Repository.Json\obj\Debug\net7.0\Repository.Json.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\KGBibleProject\Repository.Json\obj\Debug\net7.0\Repository.Json.AssemblyInfoInputs.cache
+C:\Projects\KGBibleProject\Repository.Json\obj\Debug\net7.0\Repository.Json.AssemblyInfo.cs
+C:\Projects\KGBibleProject\Repository.Json\obj\Debug\net7.0\Repository.Json.csproj.CoreCompileInputs.cache
+C:\Projects\KGBibleProject\Repository.Json\obj\Debug\net7.0\Repository.Json.dll
+C:\Projects\KGBibleProject\Repository.Json\obj\Debug\net7.0\refint\Repository.Json.dll
+C:\Projects\KGBibleProject\Repository.Json\obj\Debug\net7.0\Repository.Json.pdb
+C:\Projects\KGBibleProject\Repository.Json\obj\Debug\net7.0\ref\Repository.Json.dll

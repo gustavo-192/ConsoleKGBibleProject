@@ -1,0 +1,12 @@
+C:\Projects\ConsoleKGBibleProject\Repository.Json\bin\Debug\net8.0\Repository.Json.deps.json
+C:\Projects\ConsoleKGBibleProject\Repository.Json\bin\Debug\net8.0\Repository.Json.dll
+C:\Projects\ConsoleKGBibleProject\Repository.Json\bin\Debug\net8.0\Repository.Json.pdb
+C:\Projects\ConsoleKGBibleProject\Repository.Json\obj\Debug\net8.0\Repository.Json.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\ConsoleKGBibleProject\Repository.Json\obj\Debug\net8.0\Repository.Json.AssemblyInfoInputs.cache
+C:\Projects\ConsoleKGBibleProject\Repository.Json\obj\Debug\net8.0\Repository.Json.AssemblyInfo.cs
+C:\Projects\ConsoleKGBibleProject\Repository.Json\obj\Debug\net8.0\Repository.Json.csproj.CoreCompileInputs.cache
+C:\Projects\ConsoleKGBibleProject\Repository.Json\obj\Debug\net8.0\Repository.Json.sourcelink.json
+C:\Projects\ConsoleKGBibleProject\Repository.Json\obj\Debug\net8.0\Repository.Json.dll
+C:\Projects\ConsoleKGBibleProject\Repository.Json\obj\Debug\net8.0\refint\Repository.Json.dll
+C:\Projects\ConsoleKGBibleProject\Repository.Json\obj\Debug\net8.0\Repository.Json.pdb
+C:\Projects\ConsoleKGBibleProject\Repository.Json\obj\Debug\net8.0\ref\Repository.Json.dll

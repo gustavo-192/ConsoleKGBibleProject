@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Repository.Json/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Repository.Json.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.Json.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Repository.Json/1.0.0": {
+      "type": "project",
+      "path": "../Repository.Json/Repository.Json.csproj",
+      "msbuildProject": "../Repository.Json/Repository.Json.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Repository.Json >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\DesktopGulle\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Projects\\ConsoleKGBibleProject\\ConsoleKGBlibliProjectApp\\ConsoleKGBlibliProjectApp.csproj",
+      "projectName": "ConsoleKGBlibliProjectApp",
+      "projectPath": "C:\\Projects\\ConsoleKGBibleProject\\ConsoleKGBlibliProjectApp\\ConsoleKGBlibliProjectApp.csproj",
+      "packagesPath": "C:\\Users\\DesktopGulle\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\ConsoleKGBibleProject\\ConsoleKGBlibliProjectApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\DesktopGulle\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Projects\\ConsoleKGBibleProject\\Repository.Json\\Repository.Json.csproj": {
+              "projectPath": "C:\\Projects\\ConsoleKGBibleProject\\Repository.Json\\Repository.Json.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
