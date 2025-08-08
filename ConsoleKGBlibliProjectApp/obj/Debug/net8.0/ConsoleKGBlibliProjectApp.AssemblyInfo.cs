@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleKGBlibliProjectApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b7ff11c4bf4a6d632c048442b16f6c0b87ec129")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f68da3d4edd8559cb12a556b9b38fedbe1eed45")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleKGBlibliProjectApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleKGBlibliProjectApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

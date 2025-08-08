@@ -171,7 +171,59 @@ void MenuPrincipal()
     }
     if (opcaoSelecionada == 4)
     {
+        if (tabelaSelecionada == 1)
+        {
+            Person pessoa = new Person();
+            Console.WriteLine("Opção 4 selecionada. \n");
 
+            Console.WriteLine("Por favor, digite Id, nome, descrição e sexo: ");
+
+            pessoa.Id = int.Parse(Console.ReadLine());
+            pessoa.Nome = Console.ReadLine();
+            pessoa.Descricao = Console.ReadLine();
+            pessoa.Sexo = Console.ReadLine();
+
+
+            _repository.Create<Person>(pessoa);
+
+            Console.WriteLine();
+            Console.WriteLine("Lista atualizada\n");
+
+            var pessoas = _repository.ReadAll<Person>().ToList();
+            pessoas.ForEach
+            (
+                item =>
+                Console.WriteLine($"Id: {item.Id} - Nome: {item.Nome} - Descrição: {item.Descricao} - Sexo: {item.Sexo}")
+            );   
+
+
+        }
+        if (tabelaSelecionada == 2)
+        {
+            City cidade = new City();
+            Console.WriteLine("Opção 4 selecionada. \n");
+
+            Console.WriteLine("Por favor, digite Id, nome, descrição: ");
+
+            cidade.Id = int.Parse(Console.ReadLine());
+            cidade.Nome = Console.ReadLine();
+            cidade.Descricao = Console.ReadLine();
+
+
+
+            _repository.Create<City>(cidade);
+
+            Console.WriteLine();
+            Console.WriteLine("Lista atualizada\n");
+
+            var cidades = _repository.ReadAll<City>().ToList();
+            cidades.ForEach
+            (
+                item =>
+                Console.WriteLine($"Id: {item.Id} - Nome: {item.Nome} - Descrição: {item.Descricao}")
+            );   
+        }
+        
     }
 }
     
