@@ -2,9 +2,9 @@ using ConsoleKGBlibliProjectApp.Entities;
 
 namespace ConsoleKGBlibliProjectApp.MenuOpcoes;
 
-public static class ExibirPessoa
+public static class ExibirCidade
 {
-    public static void Exibir(Person pessoa, int opcaoSelecionada)
+    public static void Exibir(City cidade, int opcaoSelecionada)
     {
 
         if (opcaoSelecionada == 1)
@@ -13,18 +13,15 @@ public static class ExibirPessoa
         }
         if (opcaoSelecionada == 2)
         {
-            Console.WriteLine($"Nome: {pessoa.Nome}");
-            Console.WriteLine($"Descrição: {pessoa.Descricao}");
-            Console.WriteLine("Sexo:" + pessoa.Sexo);
+            Console.WriteLine($"Nome: {cidade.Nome}");
+            Console.WriteLine($"Descrição: {cidade.Descricao}");
         }
         if (opcaoSelecionada == 3)
         {
             Console.WriteLine("Digite o nome do fiel:");
-            pessoa.Nome = Console.ReadLine();
+            cidade.Nome = Console.ReadLine();
             Console.WriteLine("Digite a descrição do fiel:");
-            pessoa.Descricao = Console.ReadLine();
-            Console.WriteLine("Digite e sexe do fiel:");
-            pessoa.Sexo = Console.ReadLine();
+            cidade.Descricao = Console.ReadLine();
         }
         if (opcaoSelecionada == 4)
         {

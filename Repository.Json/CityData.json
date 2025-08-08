@@ -1,7 +1,1 @@
-[
-    {
-        "Id": 1,
-        "Nome": "Jerusalém",
-        "Descricao": "Cidade de Jerusalém."
-    }
-]
+[{"Id":1,"Nome":"Jerusal\u00E9m","Descricao":"Cidade de Israel"}]
