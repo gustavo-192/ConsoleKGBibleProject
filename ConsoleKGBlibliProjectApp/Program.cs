@@ -24,14 +24,14 @@ void MenuPrincipal()
     Console.WriteLine("Executando KGBibleProjectApp");
 
     Console.WriteLine("Qual tabela você gostaria de acessar? \n 1 - Person \n 2 - City ");
-    int tabelaSelecionada = int.Parse(Console.ReadLine());
+    TabelasEnum tabelaSelecionada = (TabelasEnum)int.Parse(Console.ReadLine());
 
     Console.WriteLine("\nEscolha a operation:\n 1 - Ler todos.\n 2 - Buscar por id.\n 3 - Atualizar.\n 4 - Criar");
-    int opcaoSelecionada = int.Parse(Console.ReadLine());
+    OperacaoEnum opcaoSelecionada = (OperacaoEnum)int.Parse(Console.ReadLine());
 
-    if (opcaoSelecionada == 1)
+    if (opcaoSelecionada == OperacaoEnum.LerTodos)
     {
-        if (tabelaSelecionada == 1)
+        if (tabelaSelecionada == TabelasEnum.Person)
         {
             Console.WriteLine($"Opção selecionada 1.");
             List<Person> pessoas = _repository.ReadAll<Person>().ToList();
@@ -41,7 +41,7 @@ void MenuPrincipal()
                 Console.WriteLine($"Id: {item.Id} - Nome: {item.Nome} - Sexo: {item.Sexo} - Descrição: {item.Descricao}")
             );
         }
-        if (tabelaSelecionada == 2)
+        if (tabelaSelecionada == TabelasEnum.City)
         {
             Console.WriteLine($"Opção selecionada 1.");
             List<City> cidades = _repository.ReadAll<City>().ToList();
@@ -53,9 +53,9 @@ void MenuPrincipal()
         }
 
     }
-    if (opcaoSelecionada == 2)
+    if (opcaoSelecionada == OperacaoEnum.BuscarPorId)
     {
-        if (tabelaSelecionada == 1)
+        if (tabelaSelecionada == TabelasEnum.Person)
         {
                 Console.WriteLine($"Opção selecionada 2.");
                 List<Person> pessoas = _repository.ReadAll<Person>().ToList();
@@ -68,9 +68,12 @@ void MenuPrincipal()
                 Console.WriteLine("Digite um ID: ");
                 int idSelecionado = int.Parse(Console.ReadLine());
                 var pessoa = _repository.GetById<Person>(idSelecionado);
-                ExibirPessoa.Exibir(pessoa, opcaoSelecionada);
+
+                //Convertendo Enum para Inteiro
+                int opcaoInt = (int)opcaoSelecionada;
+                ExibirPessoa.Exibir(pessoa, opcaoInt);
         }
-        if (tabelaSelecionada == 2)
+        if (tabelaSelecionada == TabelasEnum.City)
         {
                 Console.WriteLine($"Opção selecionada 2.");
                 List<City> cidades = _repository.ReadAll<City>().ToList();
@@ -83,13 +86,16 @@ void MenuPrincipal()
                 Console.WriteLine("Digite um ID: ");
                 int idSelecionado = int.Parse(Console.ReadLine());
                 var cidade = _repository.GetById<City>(idSelecionado);
-                ExibirCidade.Exibir(cidade, opcaoSelecionada);
+
+                //Convertendo Enum para Inteiro
+                int opcaoInt = (int)opcaoSelecionada;
+                ExibirCidade.Exibir(cidade, opcaoInt);
         }
 
     }
-    if (opcaoSelecionada == 3)
+    if (opcaoSelecionada == OperacaoEnum.Atualizar)
     {
-        if (tabelaSelecionada == 1)
+        if (tabelaSelecionada == TabelasEnum.Person)
         {
             Console.WriteLine($"Opção selecionada 3.");
             List<Person> pessoas = _repository.ReadAll<Person>().ToList();
@@ -129,7 +135,7 @@ void MenuPrincipal()
             );   
 
         }
-        if (tabelaSelecionada == 2)
+        if (tabelaSelecionada == TabelasEnum.City)
         {   
             Console.WriteLine($"Opção selecionada 3.");
             List<City> cidades = _repository.ReadAll<City>().ToList();
@@ -169,9 +175,9 @@ void MenuPrincipal()
 
         }
     }
-    if (opcaoSelecionada == 4)
+    if (opcaoSelecionada == OperacaoEnum.Criar)
     {
-        if (tabelaSelecionada == 1)
+        if (tabelaSelecionada == TabelasEnum.Person)
         {
             Person pessoa = new Person();
             Console.WriteLine("Opção 4 selecionada. \n");
@@ -198,7 +204,7 @@ void MenuPrincipal()
 
 
         }
-        if (tabelaSelecionada == 2)
+        if (tabelaSelecionada == TabelasEnum.City)
         {
             City cidade = new City();
             Console.WriteLine("Opção 4 selecionada. \n");
