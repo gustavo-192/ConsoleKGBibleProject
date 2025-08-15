@@ -1,0 +1,2 @@
+# ConsoleKGBibleProject
+Projeto bíblia
