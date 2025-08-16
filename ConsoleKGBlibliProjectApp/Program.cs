@@ -1,9 +1,12 @@
 ﻿using ConsoleKGBlibliProjectApp.MenuOpcoes;
 using ConsoleKGBlibliProjectApp.Enums;
+
 MenuPrincipal();
+
 
 void MenuPrincipal()
 {
+
     Console.WriteLine("Executando KGBibleProjectApp");
 
     Console.WriteLine("Qual tabela você gostaria de acessar? \n 1 - Person \n 2 - City ");
@@ -50,7 +53,7 @@ void MenuPrincipal()
             ExibirCidade.Atualizar();
         }
     }
-    
+
     if (opcaoSelecionada == EOperacao.Criar)
     {
         if (tabelaSelecionada == ETabelas.Person)
@@ -65,7 +68,7 @@ void MenuPrincipal()
 
     }
 }
-    
+
 
 
 
