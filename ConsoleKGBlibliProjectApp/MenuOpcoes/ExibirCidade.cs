@@ -6,30 +6,7 @@ namespace ConsoleKGBlibliProjectApp.MenuOpcoes;
 public static class ExibirCidade
 {
     static IGenericRepository _repository = new GenericRepository();
-    /*public static void Exibir(City cidade, OperacaoEnum opcaoSelecionada)
-    {
 
-        if (opcaoSelecionada == OperacaoEnum.LerTodos)
-        {
-            //To do implement ready all
-        }
-        if (opcaoSelecionada == OperacaoEnum.BuscarPorId)
-        {
-
-        }
-        if (opcaoSelecionada == OperacaoEnum.Atualizar)
-        {
-            Console.WriteLine("Digite o nome do fiel:");
-            cidade.Nome = Console.ReadLine();
-            Console.WriteLine("Digite a descrição do fiel:");
-            cidade.Descricao = Console.ReadLine();
-        }
-        if (opcaoSelecionada == OperacaoEnum.Criar)
-        {
-
-        }
-
-    }*/
     public static void ExibirTodos()
     {
         Console.WriteLine($"Opção selecionada 1.");

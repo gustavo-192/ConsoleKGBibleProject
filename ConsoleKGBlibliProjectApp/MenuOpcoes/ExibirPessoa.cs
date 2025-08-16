@@ -1,41 +1,12 @@
 using ConsoleKGBlibliProjectApp.Entities;
 using Repository.Json;
-namespace ConsoleKGBlibliProjectApp.MenuOpcoes;
 
+namespace ConsoleKGBlibliProjectApp.MenuOpcoes;
 
 public static class ExibirPessoa
 {
     static IGenericRepository _repository = new GenericRepository();
-    
-    /* public void Exibir(Person pessoa, OperacaoEnum opcaoSelecionada)
-     {
 
-         if (opcaoSelecionada == OperacaoEnum.LerTodos)
-         {
-             //To do implement ready all
-         }
-         if (opcaoSelecionada == OperacaoEnum.BuscarPorId)
-         {
-             Console.WriteLine($"Nome: {pessoa.Nome}");
-             Console.WriteLine($"Descrição: {pessoa.Descricao}");
-             Console.WriteLine("Sexo:" + pessoa.Sexo);
-         }
-         if (opcaoSelecionada == OperacaoEnum.Atualizar)
-         {
-             Console.WriteLine("Digite o nome do fiel:");
-             pessoa.Nome = Console.ReadLine();
-             Console.WriteLine("Digite a descrição do fiel:");
-             pessoa.Descricao = Console.ReadLine();
-             Console.WriteLine("Digite e sexe do fiel:");
-             pessoa.Sexo = Console.ReadLine();
-         }
-         if (opcaoSelecionada == OperacaoEnum.Criar)
-         {
-
-         }
-
-     }
-     */
     public static void ExibirTodos()
     {
         Console.WriteLine($"Opção selecionada 1.");
