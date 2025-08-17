@@ -9,7 +9,7 @@ void MenuPrincipal()
 
     Console.WriteLine("Executando KGBibleProjectApp");
 
-    Console.WriteLine("Qual tabela você gostaria de acessar? \n 1 - Person \n 2 - City ");
+    Console.WriteLine("Qual tabela você gostaria de acessar? \n 1 - Person \n 2 - City \n 3 - Deaths");
     ETabelas tabelaSelecionada = (ETabelas)int.Parse(Console.ReadLine());
 
     Console.WriteLine("\nEscolha a operation:\n 1 - Ler todos.\n 2 - Buscar por id.\n 3 - Atualizar.\n 4 - Criar");
@@ -26,6 +26,11 @@ void MenuPrincipal()
         {
             ExibirCidade.ExibirTodos();
         }
+
+        if (tabelaSelecionada == ETabelas.Death)
+        {
+            ExibirObito.ExibirTodos();
+        }
     }
 
     if (opcaoSelecionada == EOperacao.BuscarPorId)
@@ -38,6 +43,11 @@ void MenuPrincipal()
         if (tabelaSelecionada == ETabelas.City)
         {
             ExibirCidade.ExibirPorId();
+        }
+
+        if (tabelaSelecionada == ETabelas.Death)
+        {
+            ExibirObito.ExibirPorId();
         }
     }
 
@@ -52,6 +62,11 @@ void MenuPrincipal()
         {
             ExibirCidade.Atualizar();
         }
+
+        if (tabelaSelecionada == ETabelas.Death)
+        {
+            ExibirObito.Atualizar();
+        }
     }
 
     if (opcaoSelecionada == EOperacao.Criar)
@@ -64,6 +79,11 @@ void MenuPrincipal()
         if (tabelaSelecionada == ETabelas.City)
         {
             ExibirCidade.Criar();
+        }
+
+        if (tabelaSelecionada == ETabelas.Death)
+        {
+            ExibirObito.Criar();
         }
 
     }

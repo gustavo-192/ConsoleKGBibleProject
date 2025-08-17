@@ -1,6 +1,6 @@
 namespace ConsoleKGBlibliProjectApp.Entities;
 
-public class Deaths
+public class Death
 {
     public int Id { get; set; }
     public int IdPessoa { get; set; }

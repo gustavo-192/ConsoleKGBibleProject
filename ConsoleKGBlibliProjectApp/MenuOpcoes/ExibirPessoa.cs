@@ -89,9 +89,8 @@ public static class ExibirPessoa
         Person pessoa = new Person();
         Console.WriteLine("Opção 4 selecionada. \n");
 
-        Console.WriteLine("Por favor, digite Id, nome, descrição e sexo: ");
+        Console.WriteLine("Por favor, digite: nome, descrição e sexo: ");
 
-        pessoa.Id = int.Parse(Console.ReadLine());
         pessoa.Nome = Console.ReadLine();
         pessoa.Descricao = Console.ReadLine();
         pessoa.Sexo = Console.ReadLine();

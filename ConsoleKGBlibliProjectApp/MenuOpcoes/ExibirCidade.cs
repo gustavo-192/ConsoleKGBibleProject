@@ -82,9 +82,8 @@ public static class ExibirCidade
         City cidade = new City();
         Console.WriteLine("Opção 4 selecionada. \n");
 
-        Console.WriteLine("Por favor, digite Id, nome, descrição: ");
+        Console.WriteLine("Por favor, digite: nome, descrição: ");
 
-        cidade.Id = int.Parse(Console.ReadLine());
         cidade.Nome = Console.ReadLine();
         cidade.Descricao = Console.ReadLine();
 
