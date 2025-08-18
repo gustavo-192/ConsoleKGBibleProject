@@ -1,6 +1,5 @@
-using Repository.Json;
 using ConsoleKGBlibliProjectApp.Entities;
-
+using Repository.Json;
 
 namespace ConsoleKGBlibliProjectApp.MenuOpcoes;
 
@@ -8,37 +7,49 @@ namespace ConsoleKGBlibliProjectApp.MenuOpcoes;
 public static class ExibirObito
 {
     static IGenericRepository _repository = new GenericRepository();
+    static Person pessoa = new Person();
 
     public static void ExibirTodos()
     {
         Console.WriteLine($"Opção selecionada 1.");
         List<Death> obitos = _repository.ReadAll<Death>().ToList();
-        obitos.ForEach
-        (
-            item =>
-            Console.WriteLine($"Id: {item.Id} - Id Pessoa: {item.IdPessoa} - Anos de Vivência: {item.AnosVicencia} - Causa: {item.Causa}")
-        );
+
+
+        obitos.ForEach(item =>
+        {
+            var pessoa = _repository.GetById<Person>(item.IdPessoa);
+
+            Console.WriteLine($"Id: {item.Id} - Nome: {pessoa.Nome} - Anos de Vivência: {item.AnosVicencia} - Causa: {item.Causa}");
+        });
+
     }
     public static void ExibirPorId()
     {
         Console.WriteLine($"Opção selecionada 2.");
         List<Death> obitos = _repository.ReadAll<Death>().ToList();
         Console.WriteLine("\n Escolha um Óbito pelo ID: \n");
-        obitos.ForEach
-        (
-            item =>
-            Console.WriteLine($"Id: {item.Id} - Id Pessoa: {item.IdPessoa} - Anos de Vivência: {item.AnosVicencia} - Causa: {item.Causa}")
-        );
+        obitos.ForEach(item =>
+        {
+            var pessoa = _repository.GetById<Person>(item.IdPessoa);
+
+            Console.WriteLine($"Id: {item.Id} - Nome: {pessoa.Nome} - Anos de Vivência: {item.AnosVicencia} - Causa: {item.Causa}");
+        });
 
         Console.WriteLine("Digite um ID: ");
         int idSelecionado = int.Parse(Console.ReadLine());
 
         var obito = _repository.GetById<Death>(idSelecionado);
 
-        Console.WriteLine($"Nome: {obito.Id}");
-        Console.WriteLine($"Id Pessoa: {obito.IdPessoa}");
+        //Buscando Objeto pessoa de acordo com o obito.Idpessoa, Chave estrangeira da tabela Obito com tabela Pessoa
+        var pessoa = _repository.GetById<Person>(obito.IdPessoa);
+
+        Console.WriteLine($"Id: {obito.Id}");
+        Console.WriteLine($"Nome da Pessoa: {pessoa.Nome}");
         Console.WriteLine($"Anos Vivência: {obito.AnosVicencia}");
         Console.WriteLine($"Causa: {obito.Causa}");
+
+
+
     }
     public static void Atualizar()
     {
